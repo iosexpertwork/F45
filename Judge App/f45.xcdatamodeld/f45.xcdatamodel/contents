@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14A389" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Entity1" syncable="YES"/>
+    <entity name="Entity2" syncable="YES"/>
+    <entity name="Submit" syncable="YES">
+        <attribute name="judge_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="player_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Entity1" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="Entity2" positionX="-36" positionY="9" width="128" height="45"/>
+        <element name="Submit" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>
