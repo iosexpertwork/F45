@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3o3-f6-Syd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNovaCond-Semibold.otf">
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+            <string>ProximaNovaCond-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="f45logo_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="oPM-cQ-PkZ">
+                                <rect key="frame" x="336" y="215" width="353" height="120"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7D-Lh-3ro">
+                                <rect key="frame" x="246" y="507" width="533" height="45"/>
+                                <color key="backgroundColor" red="0.011764705882352941" green="0.4823529411764706" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitFranchiseeId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aej-zi-CJv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q3Y-TK-5Wk">
+                                <rect key="frame" x="246" y="386" width="533" height="45"/>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.31764705882352939" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Aqx-De-q9T">
+                                <rect key="frame" x="246" y="438" width="533" height="45"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.31764705879999999" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21568627450980393" green="0.23529411764705882" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Aqx-De-q9T" secondAttribute="centerX" id="1gM-Fa-fZm"/>
+                            <constraint firstAttribute="centerX" secondItem="oPM-cQ-PkZ" secondAttribute="centerX" id="4tT-Na-M5C"/>
+                            <constraint firstAttribute="centerX" secondItem="N7D-Lh-3ro" secondAttribute="centerX" id="a5A-Ja-oRD"/>
+                            <constraint firstAttribute="centerX" secondItem="q3Y-TK-5Wk" secondAttribute="centerX" id="x2U-y6-mB1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="33a-Ed-Eyd"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="q3Y-TK-5Wk" id="Q9Y-OH-vhR"/>
+                        <outlet property="passwordTextField" destination="Aqx-De-q9T" id="Rbh-WE-3d6"/>
+                        <outlet property="submitBtn" destination="N7D-Lh-3ro" id="XHD-kb-MNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="258"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lQ0-m5-G9q">
+            <objects>
+                <navigationController storyboardIdentifier="initial" id="3o3-f6-Syd" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B04-Oy-Xf8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f84-Xc-tX2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rxe-jy-efm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-410" y="258"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="o67-m0-JrY">
+            <objects>
+                <viewController storyboardIdentifier="MainView" id="Ze7-uu-fET" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nq3-ji-QyG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vgf-Rf-p2c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ITK-Eq-FwP">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qj5-7f-Brp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhU-RS-r1E">
+                                        <rect key="frame" x="0.0" y="63" width="1024" height="1"/>
+                                        <color key="backgroundColor" red="0.15686274509803921" green="0.17254901960784313" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eN-El-jvf">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="64"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="whiteLogo.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLogoutView:" destination="Ze7-uu-fET" eventType="touchUpInside" id="7pf-zg-caE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.19607843137254902" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg0-el-mlw">
+                                <rect key="frame" x="25" y="450" width="189" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="-62" minY="162" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="61" minY="-41" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="AWFUL" image="ratingStar.png">
+                                    <color key="titleColor" red="0.21568627450980393" green="0.23529411764705882" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingBtnTapped:" destination="Ze7-uu-fET" eventType="touchUpInside" id="AAH-jD-ppo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpf-4o-Pen">
+                                <rect key="frame" x="222" y="450" width="187" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="-59" minY="160" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="45" minY="-41" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="BAD" image="ratingStar.png">
+                                    <color key="titleColor" red="0.2156862745" green="0.23529411759999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingBtnTapped:" destination="Ze7-uu-fET" eventType="touchUpInside" id="zem-X8-1dk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkR-Pu-pna">
+                                <rect key="frame" x="616" y="450" width="187" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="-60" minY="162" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="63" minY="-41" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="GOOD" image="ratingStar.png">
+                                    <color key="titleColor" red="0.2156862745" green="0.23529411759999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingBtnTapped:" destination="Ze7-uu-fET" eventType="touchUpInside" id="4Uk-US-iWR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-1g-KHM">
+                                <rect key="frame" x="813" y="450" width="187" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="-59" minY="161" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="61" minY="-41" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="GREAT" image="ratingStar.png">
+                                    <color key="titleColor" red="0.2156862745" green="0.23529411759999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingBtnTapped:" destination="Ze7-uu-fET" eventType="touchUpInside" id="NoB-OI-8nX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vN-17-2c0">
+                                <rect key="frame" x="0.0" y="217" width="1024" height="80"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="66"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-1T-uwP">
+                                <rect key="frame" x="419" y="450" width="187" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Semibold" family="Proxima Nova Condensed" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="-60" minY="161" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="32" minY="-41" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="OK" image="ratingStar.png">
+                                    <color key="titleColor" red="0.2156862745" green="0.23529411759999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratingBtnTapped:" destination="Ze7-uu-fET" eventType="touchUpInside" id="MeO-GZ-1FY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2156862745" green="0.23529411759999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nct-1g-KHM" secondAttribute="trailing" constant="24" id="1m8-VY-40c"/>
+                            <constraint firstItem="Fpf-4o-Pen" firstAttribute="width" secondItem="Rg0-el-mlw" secondAttribute="width" id="3Bx-0n-FWr"/>
+                            <constraint firstItem="7vN-17-2c0" firstAttribute="leading" secondItem="ITK-Eq-FwP" secondAttribute="leading" id="7vL-8t-U6I"/>
+                            <constraint firstItem="Fpf-4o-Pen" firstAttribute="width" secondItem="Nct-1g-KHM" secondAttribute="width" id="CMW-BQ-DOg"/>
+                            <constraint firstItem="Rg0-el-mlw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7vN-17-2c0" secondAttribute="bottom" id="HVo-Sy-W0I"/>
+                            <constraint firstItem="Nct-1g-KHM" firstAttribute="leading" secondItem="HkR-Pu-pna" secondAttribute="trailing" constant="10" id="Hm5-Gx-lLD"/>
+                            <constraint firstItem="Nct-1g-KHM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7vN-17-2c0" secondAttribute="bottom" id="Oy1-mI-J3y"/>
+                            <constraint firstItem="Fpf-4o-Pen" firstAttribute="width" secondItem="WGH-1T-uwP" secondAttribute="width" id="PVb-4Q-njB"/>
+                            <constraint firstItem="WGH-1T-uwP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7vN-17-2c0" secondAttribute="bottom" id="X3N-33-c74"/>
+                            <constraint firstAttribute="trailing" secondItem="7vN-17-2c0" secondAttribute="trailing" id="X5p-me-vQ0"/>
+                            <constraint firstItem="Rg0-el-mlw" firstAttribute="leading" secondItem="ITK-Eq-FwP" secondAttribute="leading" constant="25" id="XaF-ep-PHk"/>
+                            <constraint firstItem="Fpf-4o-Pen" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7vN-17-2c0" secondAttribute="bottom" id="aUn-Qa-sEG"/>
+                            <constraint firstItem="Fpf-4o-Pen" firstAttribute="leading" secondItem="Rg0-el-mlw" secondAttribute="trailing" constant="10" id="cQv-ya-Wjd"/>
+                            <constraint firstItem="Fpf-4o-Pen" firstAttribute="width" secondItem="HkR-Pu-pna" secondAttribute="width" id="dEa-pS-cjE"/>
+                            <constraint firstItem="7vN-17-2c0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ITK-Eq-FwP" secondAttribute="top" id="eHz-ou-2v4"/>
+                            <constraint firstItem="WGH-1T-uwP" firstAttribute="leading" secondItem="Fpf-4o-Pen" secondAttribute="trailing" constant="10" id="eum-9W-mPJ"/>
+                            <constraint firstItem="Qj5-7f-Brp" firstAttribute="top" secondItem="ITK-Eq-FwP" secondAttribute="top" id="gFQ-uu-Xxc"/>
+                            <constraint firstItem="HkR-Pu-pna" firstAttribute="leading" secondItem="WGH-1T-uwP" secondAttribute="trailing" constant="10" id="lby-qO-dR7"/>
+                            <constraint firstItem="HkR-Pu-pna" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7vN-17-2c0" secondAttribute="bottom" id="sNQ-uW-Nen"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="awfulBtn" destination="Rg0-el-mlw" id="hkO-L6-iF5"/>
+                        <outlet property="awfulConstraint" destination="HVo-Sy-W0I" id="HDQ-GH-kq0"/>
+                        <outlet property="badBtn" destination="Fpf-4o-Pen" id="uQ7-d3-HZg"/>
+                        <outlet property="badConstraint" destination="aUn-Qa-sEG" id="SHS-4M-MQf"/>
+                        <outlet property="goodBtn" destination="HkR-Pu-pna" id="Xep-1W-3YY"/>
+                        <outlet property="goodConstraint" destination="sNQ-uW-Nen" id="vyR-ub-bDC"/>
+                        <outlet property="greatBtn" destination="Nct-1g-KHM" id="Zq9-Y2-xgn"/>
+                        <outlet property="greatConstraint" destination="Oy1-mI-J3y" id="ywu-6j-9Xh"/>
+                        <outlet property="okBtn" destination="WGH-1T-uwP" id="KRh-tJ-CHD"/>
+                        <outlet property="okConstraint" destination="X3N-33-c74" id="Pwa-At-90Q"/>
+                        <outlet property="questionLabel" destination="7vN-17-2c0" id="Skf-WP-Q2d"/>
+                        <outlet property="questionTopConstraint" destination="eHz-ou-2v4" id="RqH-eX-PWN"/>
+                        <outlet property="topBar" destination="Qj5-7f-Brp" id="Aqk-u4-cZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y36-e5-n5b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="45"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="7bj-VI-geK">
+            <objects>
+                <viewController storyboardIdentifier="popoverView" id="Coe-yz-03A" customClass="PopoverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zvg-Dh-182"/>
+                        <viewControllerLayoutGuide type="bottom" id="aLJ-Bx-do7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ynb-7j-VeD">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN8-FI-eKN">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.01176470588" green="0.4823529412" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="Coe-yz-03A" eventType="touchUpInside" id="fRM-nG-kMW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="100" height="60"/>
+                    <connections>
+                        <outlet property="logoutBtn" destination="aN8-FI-eKN" id="eYg-SK-OMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Uk-ii-zOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="1020"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="f45logo_4.png" width="353" height="120"/>
+        <image name="ratingStar.png" width="59" height="59"/>
+        <image name="whiteLogo.png" width="53" height="26"/>
+    </resources>
+</document>

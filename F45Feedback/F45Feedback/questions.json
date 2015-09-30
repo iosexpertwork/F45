@@ -1,0 +1,35 @@
+{
+  "operation": "all",
+  "data": [
+    {
+      "id": 1,
+      "question": "How was the music today?",
+      "weightage": "4",
+      "status": "1",
+      "timestamp": "2014-07-17 23:04:31"
+    },
+    {
+      "id": 2,
+      "question": "How was the workout today?",
+      "weightage": "3",
+      "status": "1",
+      "timestamp": "2014-07-31 22:03:53"
+    },
+    {
+      "id": 3,
+      "question": "How was the trainer today?",
+      "weightage": "6",
+      "status": "1",
+      "timestamp": "2014-07-31 22:04:46"
+    },
+    {
+      "id": 4,
+      "question": "How was the vibe?",
+      "weightage": "1",
+      "status": "1",
+      "timestamp": "2014-09-02 09:26:53"
+    }
+  ],
+  "success": true,
+  "errors": null
+}
